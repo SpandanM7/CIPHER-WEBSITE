@@ -72,12 +72,15 @@ def encryp():
     message_to_encode = st.text_input("Enter your message to encrypt: ")
     button1=st.button("submit")
     if button1:
-        cipher = encore()
-        st.write("Encoded message: ")
-        encoded_message = cipher.encode(message_to_encode)
-        st.write(encoded_message)
-        # st.write("Key: ")
-        # st.write(cipher.key)  
+        if (message_to_encode != ""):
+            cipher = encore()
+            st.write("Encoded message: ")
+            encoded_message = cipher.encode(message_to_encode)
+            st.write(encoded_message)
+            # st.write("Key: ")
+            # st.write(cipher.key)  
+        else:
+            st.text("PLEASE INSERT SOMETHING.")
 
     
 #decryption
@@ -86,11 +89,14 @@ def decryp():
     message_to_decode = st.text_input("Enter your encoded message to decrypt: ")
     button2=st.button("submit")
     if button2:
-        sect="PxdZH5s.QyJheUSuXnt9TWLo60?qY7EkV1KAR2cwa4pM!zmg,N3BCblFi8rGvI fjDO"
-        decoded_cipher = decore(sect)
-        decoded_message = decoded_cipher.decode(message_to_decode)
-        st.write("Decoded message: ")
-        st.write(decoded_message)
+        if (message_to_decode != ""):
+            sect="PxdZH5s.QyJheUSuXnt9TWLo60?qY7EkV1KAR2cwa4pM!zmg,N3BCblFi8rGvI fjDO"
+            decoded_cipher = decore(sect)
+            decoded_message = decoded_cipher.decode(message_to_decode)
+            st.write("Decoded message: ")
+            st.write(decoded_message)
+        else:
+            st.text("PLEASE INSERT SOMETHING.")
         
 
 def main():
