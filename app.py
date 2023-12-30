@@ -51,7 +51,6 @@ st.markdown(
 
 def home_page():
     st.title("A SIMPLE CIPHER")
-    st.subheader("by Spandan Mukherjee (bruh)")
     blink_text("There's a dropdown menu on the left, choose according to your needs.")
 
 def about_page():
