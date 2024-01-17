@@ -52,7 +52,7 @@ st.markdown(
 def home_page():
     st.title("A SIMPLE CIPHER")
     blink_text("There's a dropdown menu on the left, choose according to your needs.")
-
+'''
 def about_page():
     st.title("About Me")
     st.write("Spandan Mukherjee from Kolkata, India - where every moment is a canvas (It most certaily is not :skull:). \nCurrently a sophomore at TINT Newtown. ")
@@ -64,7 +64,7 @@ def about_page():
     st.markdown("[Instagram](https://www.instagram.com/spanda___n?igshid=ODA1NTc5OTg5Nw==)")
 
 
-
+'''
 #encryption
 def encryp():
     st.title("Encryption")
@@ -103,8 +103,10 @@ def main():
 
     if page == "Home":
         home_page()
+    '''
     elif page == "About Me":
         about_page()
+    '''
     elif page =="Encryption":
         encryp()
     elif page == "Decryption":
