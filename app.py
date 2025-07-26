@@ -55,7 +55,7 @@ def home_page():
 
 def about_page():
     st.title("About Me")
-    st.write("Spandan Mukherjee from Kolkata, India - where every moment is a canvas (It most certaily is not :skull:). \nCurrently a sophomore at TINT Newtown. ")
+    st.write("Spandan Mukherjee from Kolkata, India - where every moment is a canvas (NO :skull:). \nCurrently a final year student at TINT Newtown. ")
     img_path="img.jpg"
     st.image(img_path, caption="Don't I look hot?", width=600)
     ins_img="insta.jpg"
